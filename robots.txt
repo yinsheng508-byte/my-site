@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# 发布到自定义域名后，把下面地址改成你的域名
+Sitemap: https://example.com/sitemap.xml

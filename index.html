@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的小网站</title>
+  <meta name="description" content="一个用来练手的超简洁个人网站模版。" />
+  <meta property="og:title" content="我的小网站" />
+  <meta property="og:description" content="一个用来练手的超简洁个人网站模版。" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a href="#" class="brand">MySite</a>
+      <div class="links">
+        <a href="#about">关于</a>
+        <a href="#features">功能</a>
+        <a href="#contact">联系</a>
+        <a class="btn" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </nav>
+    <section class="hero">
+      <h1>你好，世界！</h1>
+      <p>这是一个开箱即用的静态网站模板。你可以把它部署到 GitHub Pages 或 Netlify。</p>
+      <div class="cta">
+        <a class="btn" href="#contact">现在联系我</a>
+        <a class="btn ghost" href="#features">看看都有什么</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="features">
+      <h2>你将学到</h2>
+      <ul class="grid">
+        <li>如何把网页文件放到线上</li>
+        <li>如何绑定自定义域名并启用 HTTPS</li>
+        <li>如何修改网站内容并发布更新</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>关于这个模板</h2>
+      <p>它只有几个文件：<code>index.html</code>、<code>styles.css</code>、<code>script.js</code>、<code>404.html</code>、<code>robots.txt</code>。足够你把部署流程跑通。</p>
+    </section>
+
+    <section id="contact">
+      <h2>联系我</h2>
+      <p>这个表单使用第三方表单（例如 Formspree）。把下面的 <code>action</code> 地址替换成你自己的即可。</p>
+      <!--
+        使用方法：
+        1. 访问 https://formspree.io/ 注册并创建表单，复制它给你的 endpoint（类似 https://formspree.io/f/xxxxxx）
+        2. 把下面 form 的 action 改成你的 endpoint
+      -->
+      <form id="contact-form" action="https://formspree.io/f/xxxxxx" method="POST">
+        <label>你的邮箱
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>留言
+          <textarea name="message" rows="5" placeholder="想说点什么？" required></textarea>
+        </label>
+        <button class="btn" type="submit">发送</button>
+      </form>
+      <p class="hint">* 提交按钮会把数据发送到上面的地址，未配置之前会失败，这很正常。</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> 我的站点 · 由 <a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a> 驱动</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

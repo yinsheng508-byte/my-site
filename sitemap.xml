@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 发布到自定义域名后，把 https://example.com 改成你的域名 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://example.com/</loc><changefreq>weekly</changefreq></url>
+</urlset>
